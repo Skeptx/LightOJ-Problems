@@ -1,9 +1,9 @@
-/*                                                                                  *\
+/*                                                                                *\
   Author | Henry Morales
-    File | LightOJ-Problems/Submissions/1032.cpp
-  Source | https://github.com/Skeptx/LightOJ-Problems/blob/main/Submissions/1032.cpp
+    File | LightOJ-Problems/Submissions/1032.c
+  Source | https://github.com/Skeptx/LightOJ-Problems/blob/main/Submissions/1032.c
   Notice | Copyright 2024 Henry Morales
-\*                                                                                  */
+\*                                                                                */
 
 #include <inttypes.h>
 #include <math.h>
@@ -11,13 +11,13 @@
 #include <stdlib.h>
 
 int main() {
-	uint_fast16_t T;
-	scanf("%" SCNuFAST16, &T);
-	for (uint_fast16_t t = 1; t <= T; ++t) {
+	int_fast16_t T;
+	scanf("%" SCNiFAST16, &T);
+	for (int_fast16_t t = 1; t <= T; ++t) {
 		uint32_t N;
 		scanf("%" SCNu32, &N);
 		if (N < 6) {
-			printf("Case %" SCNuFAST16 ": %c\n", t, N == 3 ? '1' : '0');
+			printf("Case %" SCNiFAST16 ": %c\n", t, N == 3 ? '1' : '0');
 			continue;
 		}
 		uint_fast8_t adjacent = 1;
@@ -48,7 +48,7 @@ int main() {
 		default:
 			summation += bits << 2 | adjacent << 1 | 1;
 		}
-		printf("Case %" SCNuFAST16 ": %" SCNu64 "\n", t, summation);
+		printf("Case %" SCNiFAST16 ": %" SCNu64 "\n", t, summation);
 	}
 	return EXIT_SUCCESS;
 }
