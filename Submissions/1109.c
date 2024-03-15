@@ -17,7 +17,7 @@ int main() {
 	for (int_fast16_t t = 1; t <= T; ++t) {
 		int_fast16_t n;
 		scanf("%" SCNiFAST16, &n);
-		printf("Case %" SCNiFAST16 ": %" SCNiFAST16 "\n", t, order[n]);
+		printf("Case %" PRIiFAST16 ": %" PRIiFAST16 "\n", t, order[n]);
 	}
 	return EXIT_SUCCESS;
 }
