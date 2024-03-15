@@ -17,7 +17,7 @@ int main() {
 		uint32_t N;
 		scanf("%" SCNu32, &N);
 		if (N < 6) {
-			printf("Case %" SCNiFAST16 ": %c\n", t, N == 3 ? '1' : '0');
+			printf("Case %" PRIiFAST16 ": %c\n", t, N == 3 ? '1' : '0');
 			continue;
 		}
 		uint_fast8_t adjacent = 1;
@@ -48,7 +48,7 @@ int main() {
 		default:
 			summation += bits << 2 | adjacent << 1 | 1;
 		}
-		printf("Case %" SCNiFAST16 ": %" SCNu64 "\n", t, summation);
+		printf("Case %" PRIiFAST16 ": %" PRIu64 "\n", t, summation);
 	}
 	return EXIT_SUCCESS;
 }
